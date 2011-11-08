@@ -33,7 +33,7 @@ INSTALLATION                                           *snipmgr-installation*
 Before installing SnipMgr you must install |snipMate|
 (http://www.vim.org/scripts/script.php?script_id=2540)
 
-When snipMate insatlled, download the snipmgr-x.x.zip and unzip it into your
+When snipMate installed, download the snipmgr-x.x.zip and unzip it into your
 |runtimepath| directory.
 
 You should place the files as follows:
@@ -73,7 +73,7 @@ For removing already existing snippet use |:SnipRemove| command or
 
 Updating snippets list ~
                                                     *<leader>ssu* *:SnipUpdate*
-If you just manualy add any snippets for current filetype, you can call the
+If you just manually add any snippets for current filetype, you can call the
 |:SnipUpdate| command and use these snippets instant now without restarting
 Vim. Default key binding: |<leader>ssu|.
 
