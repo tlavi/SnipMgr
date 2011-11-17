@@ -22,10 +22,10 @@ CONTENTS                                                    *snipmgr-contents*
 =============================================================================
 OVERVIEW                                                   *snipmgr-overview*
 
-SnipMgr provide a simple "SnipMgr" menu tree, that allow you easy manage to
-your snipMate snippets.
-In addition, you can use |:SnipAdd|, |:SnipRemove| and |:SnipUpdate| commands
-or |<leader>ssa|, |<leader>ssr|, |<leader>ssu| key bindings.
+SnipMgr provides a simple "SnipMgr" menu tree that allows you to easily
+manage your snipMate snippets.  In addition, you can use the |:SnipAdd|,
+|:SnipRemove| and |:SnipUpdate| commands or the |<leader>ssa|, |<leader>ssr|,
+and |<leader>ssu| key bindings.
 
 =============================================================================
 INSTALLATION                                           *snipmgr-installation*
@@ -33,7 +33,7 @@ INSTALLATION                                           *snipmgr-installation*
 Before installing SnipMgr you must install |snipMate|
 (http://www.vim.org/scripts/script.php?script_id=2540)
 
-When snipMate insatlled, download the snipmgr-x.x.zip and unzip it into your
+After snipMate is installed, download snipmgr-x.x.zip and unzip it into your
 |runtimepath| directory.
 
 You should place the files as follows:
@@ -41,17 +41,17 @@ You should place the files as follows:
     <your_runtimepath>/plugin/snipmgr.vim
     <your_runtimepath>/doc/snipmgr.txt
 <
-For easy uninstallation, put the files into new directory and just add the
-directory path to |rtp| variable into your |.vimrc|:
+For easy uninstallation, put the files into a new directory and just add the
+directory path to the |rtp| variable in your |.vimrc|:
 >
     :set rtp+=<new_directory_path>
 <
 
-Then update your help tags files using |:helptags| command:
+Then update your help tag files using the |:helptags| command:
 >
     :helptags $VIMRUNTIME/doc
 <
-or (if you install plugin into the <new_directory_path>)
+or (if you install the plugin into the <new_directory_path>)
 >
     :helptags <new_directory_path>/doc
 <
@@ -60,21 +60,21 @@ For more details see |add-local-help|.
 =============================================================================
 USAGE                                                         *snipmgr-usage*
 
-Adding snippet ~
+Adding snippets ~
                                                        *<leader>ssa* *:SnipAdd*
-You just select any strings in the |visual-mode|, |Select-mode| or
-|visual-block| mode and call :SnipAdd command by using SnipMgr menu, command
-line, or default key binding |<leader>ssa|.
+Just select any strings in |visual-mode|, |Select-mode| or |visual-block|
+mode and call the :SnipAdd command by using the SnipMgr menu, command line,
+or default key binding |<leader>ssa|.
 
-Removing snippet ~
+Removing snippets ~
                                                     *<leader>ssr* *:SnipRemove*
-For removing already existing snippet use |:SnipRemove| command or
+For removing already existing snippets use the |:SnipRemove| command or
 |<leader>ssr| key binding.
 
-Updating snippets list ~
+Updating the snippets list ~
                                                     *<leader>ssu* *:SnipUpdate*
-If you just manualy add any snippets for current filetype, you can call the
-|:SnipUpdate| command and use these snippets instant now without restarting
+If you manually add any snippets for the current filetype, you can call the
+|:SnipUpdate| command and use these snippets instantly without restarting
 Vim. Default key binding: |<leader>ssu|.
 
 =============================================================================
@@ -82,22 +82,23 @@ SETTINGS                                                   *snipmgr-settings*
                                                              
                                                              *loaded_snipmgr*
 Default value: 1 (when SnipMgr has successfully loaded)
-Allow you to disable loading of SnipMgr from your |.vimrc|:
+Allows you to disable loading of SnipMgr from your |.vimrc|:
 >
     let loaded_snipmgr = 0
 <
 
                                                      *g:snipmgr_disable_menu*
 Default value: 0
-Allow you to disable "SnipMgr" branch in main menu when assign to 1:
+Allows you to disable the "SnipMgr" branch in the main menu when assigned to
+1:
 >
     let g:snipmgr_disable_menu = 1
 <
 
                                                      *g:snipmgr_snippets_dir*
-Default value: 'snippets' dir inside first item of |rtp|
-If you are prefer to store snippets in place different from your |rtp|, change
-value into |g:snipmgr_snippets_dir| on preferred. For example:
+Default value: 'snippets' dir inside the first item of |rtp|
+If you prefer to store snippets in a place different from your |rtp|, change
+the value in |g:snipmgr_snippets_dir| to your preferred. For example:
 >
     let g:snipmgr_snippets_dir = $HOME."/foo/snippets"
 <
