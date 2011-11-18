@@ -18,6 +18,7 @@ CONTENTS                                                    *snipmgr-contents*
     4.SETTINGS....................................|snipmgr-settings|
     5.ABOUT.......................................|snipmgr-about|
     6.LICENSE.....................................|snipmgr-license|
+    7.THANKS......................................|snipmgr-thanks|
 
 =============================================================================
 OVERVIEW                                                   *snipmgr-overview*
@@ -117,3 +118,9 @@ LICENSE                                                     *snipmgr-license*
 
 This plugin is distributable under the same terms as Vim itself. See
 |license|. No warranties, expressed or implied.
+
+=============================================================================
+THANKS                                                       *snipmgr-thanks*
+
+I thank Robert David Grant (https://github.com/bgrant) for proofreading the
+help file.
